@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 //Bring the model into app.js file
-const Post = require('./Post.model');
+const Post = require('./Model/Post.model');
 
 //Acquire mongodb database
 const db = 'mongodb://localhost/mymongodb';
