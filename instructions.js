@@ -22,7 +22,7 @@ db.createCollection('posts')
 
 //insert values into collection
 
-db.posts.insert([
+db.posts.insert(
 {
   
    title: 'Post One', 
@@ -40,7 +40,7 @@ db.posts.insert([
    url: 'http://www.netsansoftware.com',
    
 }
-])
+);
 
 
 
