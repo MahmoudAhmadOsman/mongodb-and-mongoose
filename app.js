@@ -10,25 +10,19 @@ const Post = require('./Model/Post.model');
 const db = 'mongodb://localhost/mymongodb';
 mongoose.connect(db);
 
-
-
 // use body parser
-
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-
 const port = 9090;
-
 app.get('/', function(req, res) {
 	res.send('<h3>App is running!</h3>');
 });
 
 
 //Create another Route for posts
-
 app.get('/posts', function(req, res) {
   console.log('All posts');
   Post.find({})
@@ -41,10 +35,6 @@ app.get('/posts', function(req, res) {
       }
     });
 });
-
-
-
-
 
 app.listen(port, function (){
  	 console.log(`Listening on port ${port}!`);
