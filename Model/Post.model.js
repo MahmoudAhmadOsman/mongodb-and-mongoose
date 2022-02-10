@@ -21,5 +21,4 @@ let postSchema = new mongoose.Schema({
 	}
 });
 
-//export this modal so that you can use it on other files
 const postmodel = module.exports = mongoose.model('Post', postSchema );
